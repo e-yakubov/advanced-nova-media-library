@@ -3,9 +3,7 @@
     <modal v-if="image" @modal-close="$emit('close')" class="modal-cropper">
       <card class="text-center clipping-container m-2 bg-white rounded-lg shadow-lg overflow-hidden">
         <div class="p-4">
-          <clipper-basic class="clipper" ref="clipper" bg-color="rgba(0, 0, 0, 0)" :rotate.number="rotate" :src="imageUrl" v-bind="configs"
-           crossorigin="anonymous"
-          />
+          <clipper-basic class="clipper" ref="clipper" bg-color="rgba(0, 0, 0, 0)" :rotate.number="rotate" :src="imageUrl" v-bind="configs"/>
         </div>
 
         <div class="bg-30 px-6 py-3 footer rounded-lg">
